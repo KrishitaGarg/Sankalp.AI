@@ -9,7 +9,6 @@
   padding-left: 5%;
 }
 
-/* Layout: Ensures feedback and image are side by side */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -18,10 +17,9 @@
   gap: 30px;
 }
 
-/* Feedback Section */
 .feedback-section {
   max-width: 500px;
-  flex: 1; /* Allows it to take available space */
+  flex: 1;
   padding-top: 1%;
 }
 
@@ -37,7 +35,6 @@
   margin-bottom: 10%;
 }
 
-/* Form Styling */
 .feedback-form {
   display: flex;
   flex-direction: column;
@@ -50,12 +47,12 @@
   gap: 10px;
   font-size: 16px;
   font-weight: bold;
-  justify-content: space-between; /* Aligns text & input on the same line */
+  justify-content: space-between;
   width: 100%;
 }
 
 .feedback-form select {
-  flex: 1; /* Ensures inputs expand to fill space */
+  flex: 1;
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -65,23 +62,22 @@
 }
 
 .feedback-form textarea {
-  flex: 1; /* Ensures inputs expand to fill space */
+  flex: 1;
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: none;
   color: white;
-  width: 300px; /* Set width */
-  height: 100px; /* Set height */
+  width: 300px;
+  height: 100px;
   padding: 8px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: none; /* Prevent resizing */
+  resize: none;
 }
 
-/* Star Rating */
 .stars {
   display: flex;
   gap: 5px;
@@ -97,7 +93,6 @@
   color: gold;
 }
 
-/* Submit Button */
 .feedback-form button {
   margin-top: 10px;
   padding: 10px;
@@ -115,24 +110,22 @@
   color: black;
 }
 
-/* Image Alignment - Moves to Right */
 .footer-image {
-  flex-shrink: 0; /* Prevent shrinking */
-  margin-left: auto; /* Pushes the image to the right */
+  flex-shrink: 0;
+  margin-left: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 40%; /* Adjust width if needed */
+  max-width: 40%;
 }
 
 .footer-image img {
-  width: 100%; /* Makes it responsive */
+  width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
 }
 
-/* Footer Bottom (Left-Aligned) */
 .footer-bottom {
   margin-top: 100px;
   align-self: flex-start;

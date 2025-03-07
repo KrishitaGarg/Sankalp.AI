@@ -20,7 +20,7 @@ body {
 }
 
 .background {
-  background-image: url("../assets/Group_461[1].png");
+  background-image: url("../../assets/Group_461[1].png");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -161,7 +161,7 @@ body {
 }
 
 .gyan-setu {
-  background-image: url("../assets/gyan-setu.png");
+  background-image: url("../../assets/gyan-setu.png");
   background-size: 1400px 1600px;
   background-repeat: no-repeat;
   background-position: right;
@@ -169,7 +169,7 @@ body {
 }
 
 .khel-khel-mein {
-  background-image: url("../assets/kkm.png");
+  background-image: url("../../assets/kkm.png");
   background-size: 1400px 1600px;
   background-repeat: no-repeat;
   background-position: right;
@@ -177,7 +177,7 @@ body {
 }
 
 .yukti {
-  background-image: url("../assets/yukti.png");
+  background-image: url("../../assets/yukti.png");
   background-size: 1400px 1600px;
   background-repeat: no-repeat;
   background-position: left;

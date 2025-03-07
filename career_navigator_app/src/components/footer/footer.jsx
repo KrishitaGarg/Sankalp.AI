@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./footer.css";
-import personImage from "../assets/person.png";
+import personImage from "../../assets/person.png";
 
 const Footer = () => {
   const [feedback, setFeedback] = useState("");
@@ -64,14 +64,12 @@ const Footer = () => {
             <button type="submit">Submit Feedback</button>
           </form>
 
-          {/* Footer bottom now inside feedback section for proper alignment */}
           <div className="footer-bottom">
             <h2>SANKALP.AI</h2>
             <p>© 2025 Sankalp.AI. All rights reserved.</p>
           </div>
         </div>
 
-        {/* Image remains on the right */}
         <div className="footer-image">
           <img src={personImage} alt="Person Illustration" />
         </div>

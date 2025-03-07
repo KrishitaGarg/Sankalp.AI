@@ -1,6 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./landingPage.css";
-import Footer from "./footer"; // Adjust the path if needed
+import Footer from "../footer/footer";
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
           <h1>SANKALP.AI</h1>
           <div className="nav-buttons">
             <button className="button-header white">Sign In</button>
+
             <button className="button-header black">Register</button>
           </div>
         </nav>
