@@ -1,9 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./landingPage.css";
 import Footer from "../footer/footer";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="background">
@@ -11,9 +13,19 @@ const LandingPage = () => {
         <nav className="navbar">
           <h1>SANKALP.AI</h1>
           <div className="nav-buttons">
-            <button className="button-header white">Sign In</button>
+            <button
+              className="button-header white"
+              onClick={() => navigate("/signin")}
+            >
+              Sign In
+            </button>
 
-            <button className="button-header black">Register</button>
+            <button
+              className="button-header black"
+              onClick={() => navigate("/signup")}
+            >
+              Register
+            </button>
           </div>
         </nav>
 
