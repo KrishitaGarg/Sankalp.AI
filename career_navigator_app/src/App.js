@@ -4,6 +4,8 @@ import SignIn from "./components/SignIn/SingIn";
 import SignUp from "./components/SignUp/SingUp";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Chatbot from "./components/SankalpAI/Chatbot";
+import KkhelKhelMein from "./components/KhelKhelMein/KhelKhelMein";
+import Hangman from "./components/KhelKhelMein/Hangman/Hangman";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<LandingPage />} />
         <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/khelkhelmein" element={<KkhelKhelMein />} />
+        <Route path="/hangman" element={<Hangman />} />
       </Routes>
     </Router>
   );

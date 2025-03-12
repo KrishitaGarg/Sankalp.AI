@@ -7,6 +7,7 @@ import { auth } from "../../firebase"; // Import Firebase auth
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import CareerInterestForm from "../CareerInterestForm/CareerInterestForm"; // Import CareerInterestForm
 import Chatbot from "../SankalpAI/Chatbot"; // Import Chatbot
+import KhelKhelMein from "../KhelKhelMein/KhelKhelMein";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -90,6 +91,9 @@ const Dashboard = () => {
             <span>{activeSection}</span>
             <span className="section-title">
               {activeSection === "Gyaan Setu" ? " | Bridge of Knowledge" : ""}
+              {activeSection === "Khel Khel Mein"
+                ? " | LEARN while Gaming"
+                : ""}
             </span>
           </nav>
           <div className="header-actions">
@@ -104,12 +108,9 @@ const Dashboard = () => {
             <CareerInterestForm />
           ) : activeSection === "Sankalp.AI" ? (
             <Chatbot />
-          ) : (
-            <div className="default-content">
-              <h3>{activeSection}</h3>
-              <p>Content for {activeSection} will be displayed here.</p>
-            </div>
-          )}
+          ) : activeSection === "Khel Khel Mein" ? (
+            <KhelKhelMein />
+          ) : null}
         </section>
       </main>
     </div>
