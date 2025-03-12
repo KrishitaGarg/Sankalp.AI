@@ -86,3 +86,29 @@
     background-color: #0b7dda;
 }
 
+.hangman-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.hangman-container h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.quit-button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quit-button:hover {
+  background: purple;
+}

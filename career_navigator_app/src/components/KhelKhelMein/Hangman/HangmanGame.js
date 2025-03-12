@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import HangmanCanvas from "./HangmanCanvas";
 import "./HangmanGame.css";
 
@@ -6,6 +7,7 @@ const HangmanGame = () => {
   const [word, setWord] = useState("");
   const [guessedLetters, setGuessedLetters] = useState([]);
   const [mistakes, setMistakes] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     resetGame();
@@ -50,7 +52,15 @@ const HangmanGame = () => {
 
   return (
     <div className="hangman-container">
-      <h1>HANGMAN</h1>
+      <div className="header">
+        <h1>HANGMAN</h1>
+        <button
+          className="quit-button"
+          onClick={() => navigate("/dashboard")}
+        >
+          Quit
+        </button>
+      </div>
       <HangmanCanvas mistakes={mistakes} />
       <div className="word-display">
         {word.split("").map((letter, index) => (
